@@ -34,7 +34,7 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/mirador_dual_project/images/source-a/page1.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/images/source-a/page1.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
@@ -58,7 +58,7 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/mirador_dual_project/images/source-a/page2.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/images/source-a/page2.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
@@ -82,7 +82,7 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/mirador_dual_project/images/source-a/page3.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/images/source-a/page3.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
@@ -106,7 +106,7 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/mirador_dual_project/images/source-a/page4.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/images/source-a/page4.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
@@ -130,7 +130,7 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/mirador_dual_project/images/source-a/page5.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/images/source-a/page5.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
@@ -154,7 +154,7 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/mirador_dual_project/images/source-a/page6.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/images/source-a/page6.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
