@@ -3,9 +3,9 @@
   "@id": "http://localhost:8000/manifests/source-a.json",
   "@type": "sc:Manifest",
   "label": {
-  "hu": [ "Himnusz egyik változat" ]
-},
-   "requiredStatement": {
+    "hu": [ "Himnusz egyik változat" ]
+  },
+  "requiredStatement": {
     "label": { "en": ["Attribution"] },
     "value": { "en": ["Provided by National Széchényi Library"] }
   },
@@ -22,37 +22,37 @@
           "height": 1000,
           "width": 800,
           "metadata": [
-    {
-      "label": { "hu": ["Szerző (Creator)"] },
-      "value": { "hu": ["Kölcsey Ferenc"] }
-    },
-    {
-      "label": { "hu": ["Zeneszerző (Composer)"] },
-      "value": { "hu": ["Erkel Ferenc"] }
-    },
-    {
-      "label": { "hu": ["Készítés dátuma (Date)"] },
-      "value": { "hu": ["1823"] }
-    },
-    {
-      "label": { "hu": ["Típus (Type)"] },
-      "value": { "hu": ["Kézirat, zenei kézirat"] }
-    },
-    {
-      "label": { "hu": ["Nyelv (Language)"] },
-      "value": { "hu": ["magyar"] }
-    },
-    {
-      "label": { "hu": ["Leírás"] },
-      "value": { "hu": ["A magyar nemzeti himnusz kottájának eredeti kézirata Erkel Ferenc kézírásában."]}
-    }
+            {
+              "label": { "hu": ["Szerző (Creator)"] },
+              "value": { "hu": ["Kölcsey Ferenc"] }
+            },
+            {
+              "label": { "hu": ["Zeneszerző (Composer)"] },
+              "value": { "hu": ["Erkel Ferenc"] }
+            },
+            {
+              "label": { "hu": ["Készítés dátuma (Date)"] },
+              "value": { "hu": ["1823"] }
+            },
+            {
+              "label": { "hu": ["Típus (Type)"] },
+              "value": { "hu": ["Kézirat, zenei kézirat"] }
+            },
+            {
+              "label": { "hu": ["Nyelv (Language)"] },
+              "value": { "hu": ["magyar"] }
+            },
+            {
+              "label": { "hu": ["Leírás"] },
+              "value": { "hu": ["A magyar nemzeti himnusz kottájának eredeti kézirata Erkel Ferenc kézírásában."] }
+            }
           ],
           "images": [
             {
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "http://localhost:8000/mirador_dual_project/images/source-a/page1.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/images/source-a/page1.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
@@ -79,7 +79,7 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "http://localhost:8000/mirador_dual_project/images/source-a/page2.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/images/source-a/page2.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
@@ -106,7 +106,7 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "http://localhost:8000/mirador_dual_project/images/source-a/page3.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/images/source-a/page3.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
@@ -133,7 +133,7 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "http://localhost:8000/mirador_dual_project/images/source-a/page4.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/images/source-a/page4.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
@@ -160,7 +160,7 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "http://localhost:8000/mirador_dual_project/images/source-a/page5.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/images/source-a/page5.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
@@ -187,7 +187,7 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "https://github.com/mokuska15/.erkel/blob/main/Erkel_Himnusz/images/source-a/page6.png,
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/images/source-a/page6.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
