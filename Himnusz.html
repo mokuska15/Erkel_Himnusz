@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interaktív kotta és képgaléria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+    <script src="/openseadragon/openseadragon.min.js"></script>
+    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit-wasm.js"defer ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left-pane">
+        <select id="scoreSelector">
+          <option value="images/himnusz1.dzi">Kézirat</option>
+          <option value="images/himnusz2.dzi">PDF</option>
+        </select>
+        <button id="saveMEI">Save my MEI!</button>
+        <button id="original">Original</button>
+        <button id="change">Change</button><br/>
+        <button id="prevPage">Previous page</button>
+        <button id="nextPage">Next page</button>
+        <div id="notation"></div>
+      </div>
+      <div class="right-pane">
+        <h2>Képgaléria</h2>
+        <button id="json">Open in Mirador</button>
+        <select id="imageSelector">
+          <label for="imageSelector">Válasszon képet:</label>
+          <option value="images/himnusz1.dzi">Himnusz</option>
+        </select>
+        <div id="openseadragon1"></div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        verovio.module.onRuntimeInitialized = function () {
+          const tk = new verovio.toolkit();
+          let appXPath = [];
+          let currentPage = 1;
+          const notationElement = document.getElementById("notation");
+
+          document
+            .getElementById("saveMEI")
+            .addEventListener("click", (event) => {
+              let meiContent = tk.getMEI();
+              var myBlob = new Blob([meiContent], { type: "application/xml" });
+              saveAs(myBlob, "meifile.mei");
+            });
+
+          function loadFile() {
+            const selector = document.getElementById("scoreSelector");
+            const selectedValue = selector.value;
+
+            let meiUrl = "";
+
+            if (selectedValue === "images/himnusz1.dzi") {
+              meiUrl =
+                "https://raw.githubusercontent.com/mokuska15/.erkel/main/facsimilie.mei";
+            } else if (selectedValue === "images/himnusz2.dzi") {
+              meiUrl =
+                "https://raw.githubusercontent.com/mokuska15/.erkel/main/himnuszpdf.mei";
+            }
+
+            fetch(meiUrl)
+              .then((response) => response.text())
+              .then((meiXML) => {
+                tk.setOptions({
+                  pageWidth: 3000,
+                  pageHeight: 3000,
+                  scale: 60,
+                  breaks:"encoded",
+                  adjustPageHeight: true,
+                  appXPathQuery: appXPath,
+                  
+                });
+                tk.loadData(meiXML);
+                currentPage = 1;
+                notationElement.innerHTML = tk.renderToSVG(currentPage);
+              });
+          }
+          
+          document
+            .getElementById("scoreSelector")
+            .addEventListener("change", () => {
+              loadFile();
+            });
+            
+
+          document.getElementById("nextPage").addEventListener("click", () => {
+            currentPage = Math.min(currentPage + 1, tk.getPageCount());
+            notationElement.innerHTML = tk.renderToSVG(currentPage);
+
+            if (
+              viewer &&
+              viewer.currentPage() < viewer.tileSources.length - 1
+            ) {
+              viewer.goToPage(viewer.currentPage() + 1);
+            }
+          });
+          document.getElementById("prevPage").addEventListener("click", () => {
+            currentPage = Math.max(currentPage - 1, 1);
+            notationElement.innerHTML = tk.renderToSVG(currentPage);
+
+            if (viewer && viewer.currentPage() > 0) {
+              viewer.goToPage(viewer.currentPage() - 1);
+            }
+          });
+
+          document.getElementById("original").addEventListener("click", () => {
+            appXPath = [".//lem"];
+            loadFile();
+          });
+
+          document.getElementById("change").addEventListener("click", () => {
+            appXPath = [".//rdg"];
+            loadFile();
+          });
+
+          loadFile();
+          let viewer = null;
+
+          viewer = OpenSeadragon({
+            id: "openseadragon1",
+            prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
+            sequenceMode: true,
+            showSequenceControl: true,
+            showNavigator: false,
+            tileSources: [
+              { type: "image", url: "images/himnusz1.png" },
+              { type: "image", url: "images/himnusz2.png" },
+              { type: "image", url: "images/himnusz4.png" },
+              { type: "image", url: "images/himnusz5.png" },
+              { type: "image", url: "images/himnusz6.png" },
+            ],
+            defaultZoomLevel: 1,
+            zoomPerClick: 1.5,
+            minZoomLevel: 0,
+            maxZoomLevel: 10,
+          });
+
+          document
+            .getElementById("json")
+            .addEventListener("click", function () {
+              const selectedImage =
+                document.getElementById("imageSelector").value;
+              const imageName = selectedImage.split("/").pop().split(".")[0]; // "himnusz1"
+              const jsonUrl = `https://raw.githubusercontent.com/mokuska15/.erkel/refs/heads/main/json`;
+              window.open(jsonUrl, "_blank");
+            });
+          document
+            .getElementById("imageSelector")
+            .addEventListener("change", function () {
+              viewer.open(this.value);
+            });
+        };
+      });
+    </script>
+  </body>
+</html>
