@@ -1,11 +1,11 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "@id": "http://localhost:8000/manifests/source-b.json",
+  "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/manifests/source-b.json",
   "@type": "sc:Manifest",
   "label": {
-  "hu": [ "Himnusz másik változat" ]
+    "hu": ["Himnusz másik változat"]
   },
-   "requiredStatement": {
+  "requiredStatement": {
     "label": { "en": ["Attribution"] },
     "value": { "en": ["Provided by National Széchényi Library"] }
   },
@@ -16,184 +16,151 @@
       "@type": "sc:Sequence",
       "canvases": [
         {
-          "@id": "http://localhost:8000/canvas/source-b/page1",
+          "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/canvas/source-b/page1",
           "@type": "sc:Canvas",
           "label": "page 1",
           "height": 1000,
           "width": 800,
           "metadata": [
-    {
-      "label": { "hu": ["Szerző (Creator)"] },
-      "value": { "hu": ["Kölcsey Ferenc"] }
-    },
-    {
-      "label": { "hu": ["Zeneszerző (Composer)"] },
-      "value": { "hu": ["Erkel Ferenc"] }
-    },
-    {
-      "label": { "hu": ["Készítés dátuma (Date)"] },
-      "value": { "hu": ["1823"] }
-    },
-    {
-      "label": { "hu": ["Típus (Type)"] },
-      "value": { "hu": ["Kézirat, zenei kézirat"] }
-    },
-    {
-      "label": { "hu": ["Nyelv (Language)"] },
-      "value": { "hu": ["magyar"] }
-    },
-    {
-      "label": { "hu": ["Leírás"] },
-      "value": { "hu": ["A magyar nemzeti himnusz kottájának eredeti kézirata Erkel Ferenc kézírásában."]}
-    }
+            { "label": { "hu": ["Szerző (Creator)"] }, "value": { "hu": ["Kölcsey Ferenc"] } },
+            { "label": { "hu": ["Zeneszerző (Composer)"] }, "value": { "hu": ["Erkel Ferenc"] } },
+            { "label": { "hu": ["Készítés dátuma (Date)"] }, "value": { "hu": ["1823"] } },
+            { "label": { "hu": ["Típus (Type)"] }, "value": { "hu": ["Kézirat, zenei kézirat"] } },
+            { "label": { "hu": ["Nyelv (Language)"] }, "value": { "hu": ["magyar"] } },
+            { "label": { "hu": ["Leírás"] }, "value": { "hu": ["A magyar nemzeti himnusz kottájának eredeti kézirata Erkel Ferenc kézírásában."] } }
           ],
           "images": [
             {
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "http://localhost:8000/mirador_dual_project/images/source-b/page1.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/mirador_dual_project/images/source-b/page1.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
                 "width": 800
               },
-              "on": "http://localhost:8000/canvas/source-b/page1"
+              "on": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/canvas/source-b/page1"
             }
           ]
         },
         {
-          "@id": "http://localhost:8000/canvas/source-b/page2",
+          "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/canvas/source-b/page2",
           "@type": "sc:Canvas",
           "label": "page 2",
           "height": 1000,
           "width": 800,
           "metadata": [
-            {
-              "label": "Description",
-              "value": "page 2 continues the melody with added lyrics beneath the staves."
-            }
+            { "label": "Description", "value": "page 2 continues the melody with added lyrics beneath the staves." }
           ],
           "images": [
             {
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "http://localhost:8000/mirador_dual_project/images/source-b/page2.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/mirador_dual_project/images/source-b/page2.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
                 "width": 800
               },
-              "on": "http://localhost:8000/canvas/source-b/page2"
+              "on": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/canvas/source-b/page2"
             }
           ]
         },
         {
-          "@id": "http://localhost:8000/canvas/source-b/page3",
+          "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/canvas/source-b/page3",
           "@type": "sc:Canvas",
           "label": "page 3",
           "height": 1000,
           "width": 800,
           "metadata": [
-            {
-              "label": "Description",
-              "value": "page 3 features dynamic markings and tempo indications."
-            }
+            { "label": "Description", "value": "page 3 features dynamic markings and tempo indications." }
           ],
           "images": [
             {
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "http://localhost:8000/mirador_dual_project/images/source-b/page3.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/mirador_dual_project/images/source-b/page3.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
                 "width": 800
               },
-              "on": "http://localhost:8000/canvas/source-b/page3"
+              "on": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/canvas/source-b/page3"
             }
           ]
         },
         {
-          "@id": "http://localhost:8000/canvas/source-b/page4",
+          "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/canvas/source-b/page4",
           "@type": "sc:Canvas",
           "label": "page 4",
           "height": 1000,
           "width": 800,
           "metadata": [
-            {
-              "label": "Description",
-              "value": "page 4 shows a key change and a shift in rhythmic patterns."
-            }
+            { "label": "Description", "value": "page 4 shows a key change and a shift in rhythmic patterns." }
           ],
           "images": [
             {
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "http://localhost:8000/mirador_dual_project/images/source-b/page4.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/mirador_dual_project/images/source-b/page4.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
                 "width": 800
               },
-              "on": "http://localhost:8000/canvas/source-b/page4"
+              "on": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/canvas/source-b/page4"
             }
           ]
         },
         {
-          "@id": "http://localhost:8000/canvas/source-b/page5",
+          "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/canvas/source-b/page5",
           "@type": "sc:Canvas",
           "label": "page 5",
           "height": 1000,
           "width": 800,
           "metadata": [
-            {
-              "label": "Description",
-              "value": "page 5 contains a section of polyphonic texture with overlapping voices."
-            }
+            { "label": "Description", "value": "page 5 contains a section of polyphonic texture with overlapping voices." }
           ],
           "images": [
             {
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "http://localhost:8000/mirador_dual_project/images/source-b/page5.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/mirador_dual_project/images/source-b/page5.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
                 "width": 800
               },
-              "on": "http://localhost:8000/canvas/source-b/page5"
+              "on": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/canvas/source-b/page5"
             }
           ]
         },
         {
-          "@id": "http://localhost:8000/canvas/source-b/page6",
+          "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/canvas/source-b/page6",
           "@type": "sc:Canvas",
           "label": "page 6",
           "height": 1000,
           "width": 800,
           "metadata": [
-            {
-              "label": "Description",
-              "value": "page 6 concludes the manuscript with a final cadence and signature."
-            }
+            { "label": "Description", "value": "page 6 concludes the manuscript with a final cadence and signature." }
           ],
           "images": [
             {
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "http://localhost:8000/mirador_dual_project/images/source-b/page6.png",
+                "@id": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/mirador_dual_project/images/source-b/page6.png",
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
                 "width": 800
               },
-              "on": "http://localhost:8000/canvas/source-b/page6"
+              "on": "https://raw.githubusercontent.com/mokuska15/Erkel_Himnusz/main/canvas/source-b/page6"
             }
           ]
         }
