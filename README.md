@@ -1,0 +1,6 @@
+# Erkel_Himnusz
+Ebben a repositoryban található Erkel Ferenc Himnuszának fakszimiléje (a facsimile mappában), 
+valamint annak MEI-formátumba konvertált változata (a MEI file mappában). 
+A repository tartalmaz továbbá egy HTML-fájlt, amelyben a MEI-verzió és a fakszimile képi változata (PNG-formátumban) egymás mellett jelenik meg. 
+Ezen kívül elérhető egy másik HTML-fájl is, amely két különböző fakszimilét jelenít meg IIIF-alapú Mirador felületen; 
+ehhez a szükséges JSON-manifesztumok szintén a repositoryban megtalálhatók.
