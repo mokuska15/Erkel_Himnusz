@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Himnusz</title>
+    <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    <style>
+    header img {
+      height: 40px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    #viewer {
+      flex-grow: 1;
+      height: calc(100vh - 60px);
+    }
+  </style>
+  </head>
+  <body>
+
+    <div id="viewer"></div>
+
+    <script>
+      Mirador.viewer({
+        id: "viewer",
+        windows: [
+          {
+            manifestId: "manifests/source-a.json",
+            thumbnailNavigationPosition: "far-bottom",
+             canvasIndex: 0,
+          },
+          {
+            manifestId: "manifests/source-b.json",
+            thumbnailNavigationPosition: "far-bottom",
+             canvasIndex: 0,
+          },
+          {
+            manifestId: "manifests/source-c.json",
+            thumbnailNavigationPosition: "far-bottom",
+             canvasIndex: 0,
+          }
+        ]
+      });
+    </script>
+  </body>
+</html>
