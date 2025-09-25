@@ -187,7 +187,7 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "http://localhost:8000/mirador_dual_project/images/source-a/page6.png",
+                "@id": "https://github.com/mokuska15/.erkel/blob/main/Erkel_Himnusz/images/source-a/page6.png,
                 "@type": "dctypes:Image",
                 "format": "image/png",
                 "height": 1000,
